@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package notification;
+
+service NotificationService {
+  rpc SendNotification(Notification) returns (Void) {}
+  rpc ListenNotifications(stream User) returns (stream Notification) {}
+}
+
+message Void {}
+
+message Notification {
+  string id = 1;
+  string content = 2;
+  string timestamp = 3;
+  int32 validity = 4;
+}
+
+message User {
+  string id = 1;
+  string name = 2;
+}

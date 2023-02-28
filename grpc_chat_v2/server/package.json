@@ -1,0 +1,22 @@
+{
+  "name": "grpc-server",
+  "version": "1.0.0",
+  "description": "GRPC - Chat Server",
+  "main": "server.js",
+  "engines": {
+    "node": "16.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "GRPC"
+  ],
+  "author": "Khuzema Khomosi",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.8.5",
+    "@grpc/proto-loader": "^0.7.4"
+  }
+}
